@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const gulppug = require('gulp-pug') //
 const sass = require('gulp-sass')(require('sass'))
 const del = require('del') // 
-const cleanCSS = require('gulp-clean-css') //
+// const cleanCSS = require('gulp-clean-css') //
 const rename = require('gulp-rename') //
 const babel = require('gulp-babel') // коррекный перевод js в более старые версии для корректной работы в старых браузерах
 const uglify = require('gulp-uglify') // минификация и оптимизация js кода
@@ -73,15 +73,15 @@ function html() {
 
 //обработка стилей 
 function styles() {
-    return gulp.src(path.styles.src) //= return gulp.src('src/styles/**/*.less')
+    return gulp.src(path.styles.src) 
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))      // из less в css
+    .pipe(sass()).on('error', sass.logError)      
     // .pipe(autoprefixer({ //добавление префиксов
     //     cascade: false
     // }))
-    .pipe(cleanCSS({     // минификация кода
-        level: 2
-    }))               
+    // .pipe(cleanCSS({     // минификация кода
+    //     level: 2
+    // }))               
     .pipe(rename({    // переименование файлов в едином стиле
         basename: 'main',
         suffix: '.min'
@@ -112,7 +112,7 @@ function img() {
 function watch() {
     sync.init({
         server: {
-            baseDir: './dist/'          // смотря где находится файл html
+            baseDir: 'dist/'          // смотря где находится файл html
         }
     })
     gulp.watch(path.html.dest).on('change', sync.reload) // перезагрузка сервера после обновления html в папке назначения
@@ -124,12 +124,12 @@ function watch() {
     gulp.watch(path.pug.src, pug)
 }
 
-const build = gulp.series(clean, html, pug, gulp.parallel(styles, scripts, img), watch) // последовательное выполнение указанных задач + доп параллельное отслеживание
+const build = gulp.series(html, pug, gulp.parallel(styles, scripts, img), watch) // последовательное выполнение указанных задач + доп параллельное отслеживание
 
 exports.pug = pug
 exports.html = html
 exports.img = img
-exports.clean = clean
+// exports.clean = clean
 exports.styles = styles
 exports.watch = watch
 exports.build = build
