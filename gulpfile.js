@@ -1,11 +1,10 @@
 const gulp = require('gulp')
 const gulppug = require('gulp-pug') //
-const less = require('gulp-less') //
 const sass = require('gulp-sass')(require('sass'))
 const del = require('del') // 
 const cleanCSS = require('gulp-clean-css') //
 const rename = require('gulp-rename') //
-const babel = require('gulp-babel') // коррекный перевод js в более старые версии для корректной работы в более старых браузерах
+const babel = require('gulp-babel') // коррекный перевод js в более старые версии для корректной работы в старых браузерах
 const uglify = require('gulp-uglify') // минификация и оптимизация js кода
 const concat = require('gulp-concat') // автоматическое объединение разных файлов скриптов в один
 const sourcemaps = require('gulp-sourcemaps') // будет подсказывать в devtools, на какой именно строке написаны стили и др.
@@ -14,9 +13,7 @@ const htmlmin = require('gulp-htmlmin') // минификация и оптим�
 const newer = require('gulp-newer') // оптимизация будет только для новых картинок
 const browserSync = require('browser-sync')
 const sync = require('browser-sync').create() //автоматическая перезагрузка страницы 
-// const autoprefixer = require('gulp-autoprefixer')
-// пути для сохранения файлов после обработки
-const path = {
+const path = {              // пути 
     pug: {
         src: 'src/*.pug',
         dest: 'dist'
@@ -61,7 +58,7 @@ function clean() {
 //преобразование паг
 function pug() {
     return gulp.src(path.pug.src)
-    .pipe(gulppug())
+    .pipe(gulppug({pretty: true})) 
     .pipe(gulp.dest(path.pug.dest))
     .pipe(sync.stream())
 }

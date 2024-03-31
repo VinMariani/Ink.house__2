@@ -1,0 +1,16 @@
+extends layouts/layout
+
+block content
+    body
+        header.page_header
+            include ./layouts/header
+        main.page_main
+            include ./modules/hero
+            include ./modules/filter
+            include ./modules/catalog 
+            include ./modules/promo
+            include ./modules/about_us
+        footer.page_footer
+            include ./modules/page_footer__contact
+            include ./modules/page_footer__nav
+            include ./modules/page_footer__social
