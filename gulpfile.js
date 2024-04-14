@@ -44,7 +44,7 @@ function scripts() {
         presets: ['@babel/env']
     }))
     .pipe(uglify())
-    .pipe(concat('main.min.js')) // объединит несколько файлов в 1 и сразу даст им корректное название (также можно и в css)
+    // .pipe(concat('main.min.js')) // объединит несколько файлов в 1 и сразу даст им корректное название (также можно и в css)
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(path.scripts.dest)) // куда положит скрипты
     .pipe(sync.stream())
@@ -119,7 +119,7 @@ function watch() {
     // gulp.watch(path.pug.dest).on('change', sync.reload) // перезагрузка сервера после обновления pug в папке назначения
     gulp.watch(path.html.src, html)
     gulp.watch(path.styles.src, styles) // задача styles будет выполняться автоматически при изменениях в файлах по указанному пути
-    gulp.watch(path.scripts.src, scripts)
+    // gulp.watch(path.scripts.src, scripts)
     gulp.watch(path.images.src, img)
     gulp.watch(path.pug.src, pug)
 }
