@@ -1,0 +1,74 @@
+.promo {
+    background-color: $base-color-green-medium;
+    background-image: url('../../images/promo-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-left: 165px;
+    padding-bottom: 70px;
+
+    &__wrapper {
+        max-width: 540px;
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        display: block;
+        font-family: $primary-font;
+        color: $base-color-white;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    &__text {
+        display: block;
+        font-family: $primary-font;
+        color: $base-color-white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        max-width: 540px;
+        min-height: 209px;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        background-color: $base-color-yellow-medium;
+        font-family: $primary-font;
+        color: $base-color-black;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 21px 60px;
+
+        &:hover {
+            color: $base-color-black;
+            background-color: $base-color-yellow-light;
+            border: none;
+        }
+
+        &:focus {
+            color: $base-color-black;
+            background-color: $base-color-yellow-light;
+            border: 1px solid $base-color-yellow-dark;
+        }
+
+        &:active {
+            background-color:$base-color-yellow-medium2;
+            color: $base-color-black;
+            border: none;
+        }
+    }
+}

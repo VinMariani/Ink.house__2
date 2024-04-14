@@ -24,8 +24,7 @@ main {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -45,7 +44,7 @@ main {
   font-display: swap;
 }
 .page_header {
-  background-color: rgb(225, 237, 230);
+  background-color: #e1ede6;
   min-height: 100px;
   display: flex;
   gap: 497px;
@@ -58,7 +57,7 @@ main {
 .page_header__name {
   text-decoration: none;
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(89, 141, 102);
+  color: #598d66;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -73,21 +72,21 @@ main {
 }
 .page_header__nav_link {
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(44, 45, 53);
+  color: #2c2d35;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   text-decoration: none;
 }
 .page_header__nav_link:hover {
-  color: rgb(55, 107, 68);
+  color: #376b44;
 }
 .page_header__nav_link:focus {
-  color: rgb(44, 45, 53);
-  background-color: rgb(225, 237, 230);
+  color: #2c2d35;
+  background-color: #e1ede6;
 }
 .page_header__nav_link:active {
-  color: rgb(55, 107, 68);
+  color: #376b44;
 }
 .page_header__nav_link--cart {
   background-image: url("./images/icons/icon-cart.svg");
@@ -117,7 +116,7 @@ main {
 }
 .hero__info_title {
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(44, 45, 53);
+  color: #2c2d35;
   font-size: 60px;
   font-weight: 500;
   line-height: 66px;
@@ -126,14 +125,14 @@ main {
 }
 .hero__info_title--green {
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(89, 141, 102);
+  color: #598d66;
   font-size: 60px;
   font-weight: 500;
   line-height: 66px;
 }
 .hero__info_text {
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(134, 146, 139);
+  color: #86928b;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -141,9 +140,9 @@ main {
   margin-bottom: 50px;
 }
 .hero__info_button {
-  border: 1px solid rgb(89, 141, 102);
+  border: 1px solid #598d66;
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(89, 141, 102);
+  color: #598d66;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -154,18 +153,18 @@ main {
 }
 .hero__info_button:hover {
   border: none;
-  background-color: rgb(89, 141, 102);
-  color: rgb(244, 246, 245);
+  background-color: #598d66;
+  color: #f4f6f5;
 }
 .hero__info_button:focus {
-  border: 1px solid rgb(89, 141, 102);
-  background-color: rgb(225, 237, 230);
-  color: rgb(89, 141, 102);
+  border: 1px solid #598d66;
+  background-color: #e1ede6;
+  color: #598d66;
 }
 .hero__info_button:active {
   border: none;
-  background-color: rgb(55, 107, 68);
-  color: rgb(244, 246, 245);
+  background-color: #376b44;
+  color: #f4f6f5;
 }
 
 .filter {
@@ -178,7 +177,7 @@ main {
 .filter__title {
   display: block;
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(44, 45, 53);
+  color: #2c2d35;
   font-size: 40px;
   font-weight: 500;
   line-height: 44px;
@@ -193,29 +192,29 @@ main {
   padding: 0;
 }
 .filter__button {
-  background-color: rgb(225, 237, 230);
+  background-color: #e1ede6;
   border: none;
   border-radius: 20px;
   font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(44, 45, 53);
+  color: #2c2d35;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 20px;
   cursor: pointer;
 }
 .filter__button:hover {
-  color: rgb(225, 237, 230);
-  background-color: rgb(89, 141, 102);
+  color: #e1ede6;
+  background-color: #598d66;
   border: none;
 }
 .filter__button:focus {
-  color: rgb(44, 45, 53);
-  background-color: rgb(225, 237, 230);
-  border: 1px solid rgb(89, 141, 102);
+  color: #2c2d35;
+  background-color: #e1ede6;
+  border: 1px solid #598d66;
 }
 .filter__button:active {
-  background-color: rgb(55, 107, 68);
-  color: rgb(244, 246, 245);
+  background-color: #376b44;
+  color: #f4f6f5;
 }
 
 .catalog {
@@ -243,66 +242,3 @@ main {
 .catalog__main-item.active {
   display: block;
 }
-.catalog__item {
-  max-width: 350px;
-  max-height: 730px;
-  padding: 20px;
-  background-color: rgb(225, 237, 230);
-}
-.catalog__author {
-  font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(134, 146, 139);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.catalog__name {
-  font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(44, 45, 53);
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 35px;
-  margin: 0;
-  margin-bottom: 8px;
-}
-.catalog__info {
-  font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(44, 45, 53);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  margin: 0;
-  margin-bottom: 30px;
-}
-.catalog__price {
-  font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(89, 141, 102);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-  margin: 0;
-  margin-bottom: 20px;
-}
-.catalog__button {
-  background-color: rgb(225, 237, 230);
-  border: 1px solid rgb(89, 141, 102);
-  font-family: "Raleway", "Arial", sans-serif;
-  color: rgb(89, 141, 102);
-  font-size: 20px;
-  font-weight: 500;
-  padding: 21px 107px;
-  cursor: pointer;
-}
-.catalog__button:hover {
-  color: rgb(244, 246, 245);
-  background-color: rgb(89, 141, 102);
-  border: none;
-}
-.catalog__button:focus {
-  color: rgb(44, 45, 53);
-  background-color: rgb(225, 237, 230);
-  border: 1px solid rgb(89, 141, 102);
-}/*# sourceMappingURL=main.css.map */

@@ -1,15 +1,13 @@
 - var nav_items = [{link:"#", name:"Репродукции"}, {link:"#", name:"Новинки"}, {link:"#", name:"О нас"}]
-header.page_header
-    .page_header__logo_wrapper
-        a.page_header__link(href="#")
-            img.page_header__img(src="./images/icons/logo.svg" alt="Логотип Инк Хаус")
-        a.page_header__name(href="#") 
-            span Ink.House
-        nav.page_header__nav
-            ul.page_header__nav_list
-                for item in nav_items
-                    li.page_header__nav-item
-                        a(href=item.link).page_header__nav_link=item.name
-                li.page_header__nav-item
-                    a.page_header__nav_link.page_header__nav_link--cart(href="#")
-                        span.visually-hidden Корзина
+include ../_mixins.pug
+.page_header__logo_wrapper
+    a.page_header__link(href="#")
+        img.page_header__img(src="./images/icons/logo.svg" alt="Логотип Инк Хаус")
+    a.page_header__name(href="#")
+        span Ink.House
+nav.page_header__nav
+    +header_nav( [ {href: '#', text: 'Репродукции'}, 
+                    {href: '#', text: 'Новинки'}, 
+                    {href: '#', text: 'О нас'} ] )
+    a.page_header__nav_link.page_header__nav_link--cart(href="#")
+        span.visually-hidden Корзина

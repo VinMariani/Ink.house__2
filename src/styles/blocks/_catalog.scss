@@ -1,0 +1,101 @@
+.catalog {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+
+    &__main-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        justify-content: center;
+        justify-items: center;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__main-item {
+        display: none;
+    }
+
+    &__main-item.active {
+        display: block;
+    }
+
+    &__item {
+        max-width: 350px;
+        max-height: 730px;
+        padding: 20px;
+        background-color: $base-color-green-light;
+    }
+
+    &__author {
+        font-family: $primary-font;
+        color: $base-color-gray;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-family: $primary-font;
+        color: $base-color-black;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35px;
+        margin: 0;
+        margin-bottom: 8px; 
+    }
+
+    &__info {
+        font-family: $primary-font;
+        color: $base-color-black;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        margin: 0; 
+        margin-bottom: 30px; 
+    }
+
+    &__price {
+        font-family: $primary-font;
+        color: $base-color-green-medium;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        margin: 0; 
+        margin-bottom: 20px; 
+    }
+
+    &__button {
+        background-color: $base-color-green-light;
+        border: 1px solid $base-color-green-medium;
+        font-family: $primary-font;
+        color: $base-color-green-medium;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 21px 107px;
+        cursor: pointer;
+
+        &:hover {
+            color: $base-color-white;
+            background-color: $base-color-green-medium;
+            border: none;
+        }
+
+        &:focus {
+            color: $base-color-black;
+            background-color: $base-color-green-light;
+            border: 1px solid $base-color-green-medium;
+        }
+    }
+
+}

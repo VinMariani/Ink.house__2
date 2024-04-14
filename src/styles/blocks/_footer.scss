@@ -1,0 +1,115 @@
+.page_footer {
+    background-color: $base-color-green-light;
+    min-width: 168px;
+    padding: 23px 165px;
+    display: flex;
+
+    &__name {
+        text-decoration: none;
+        font-family: $primary-font;
+        color: $base-color-green-medium;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+            font-family: $primary-font;
+            color: $base-color-gray;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+
+        &_number {
+            text-decoration: none;
+            font-family: $primary-font;
+            color: $base-color-black;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        margin-right: 248px;
+
+        &_list {
+            display: block;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        &_title {
+            margin: 0;
+            font-family: $primary-font;
+            color: $base-color-black;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23px;
+        }
+
+        &_link {
+            margin: 0;
+            text-decoration: none;
+            font-family: $primary-font;
+            color: $base-color-gray;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+
+        &_item:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+    
+    &__social_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+        margin-bottom: 10px;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__social_link {
+        margin: 0;
+        text-decoration: none;
+        font-family: $primary-font;
+        color: $base-color-gray;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    &__info {
+        font-family: $primary-font;
+        color: $base-color-gray;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+
+    &__info-name {
+        display: block;
+        margin-bottom: 6px;
+        font-family: $primary-font;
+        color: $base-color-gray;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+}

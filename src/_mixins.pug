@@ -1,0 +1,5 @@
+mixin header_nav( items )
+    ul.page_header__nav_list
+        each item in items 
+                li.page_header__nav-item
+                    a(href=item.href).page_header__nav_link=item.text

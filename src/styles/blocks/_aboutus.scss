@@ -1,0 +1,48 @@
+.about_us {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding: 70px 165px;
+
+    &__img {
+        display: block; 
+    }
+
+    &__info {
+        display: block;
+        max-width: 635px;
+    }
+
+    &__title {
+        display: block;
+        font-family: $primary-font;
+        color: $base-color-black;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        margin: 0;
+        margin-bottom: 20px; 
+    }
+
+    &__text {
+        display: block;
+        font-family: $primary-font;
+        color: $base-color-black;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        margin: 0;
+        margin-bottom: 20px;
+        min-height: 108px;
+    }
+
+    &__painters_list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+}

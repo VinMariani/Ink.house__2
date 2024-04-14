@@ -56,7 +56,7 @@ main {
     flex-grow: 1;
 } */
 
-.page_header__nav_list,
+/* .page_header__nav_list,
 .filter__list,
 .catalog__main-list,
 .catalog__list,
@@ -66,7 +66,7 @@ main {
 .page_footer__social_list {
     list-style: none;
     padding: 0;
-}
+} */
 
 /* .page_header {
     background-color: rgba(225, 237, 230, 1);
@@ -265,13 +265,13 @@ main {
     color: rgba(244, 246, 245, 1);
 } */
 
-.catalog {
+/* .catalog {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;;
-}
+} */
 
-.catalog__list {
+/* .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -282,20 +282,20 @@ main {
 
 .catalog__main-item {
     display: none;
-}
+} */
 
-.catalog__main-item.active {
+/* .catalog__main-item.active {
     display: block;
-}
+} */
 
-.catalog__item {
+/* .catalog__item {
     max-width: 350px;
     max-height: 730px;
     padding: 20px;
     background-color: rgba(225, 237, 230, 1);
-}
+} */
 
-.catalog__author {
+/* .catalog__author {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(134, 146, 139, 1);
     font-size: 18px;
@@ -314,9 +314,9 @@ main {
     line-height: 35px;
     margin: 0;
     margin-bottom: 8px; 
-}
+} */
 
-.catalog__info {
+/* .catalog__info {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(44, 45, 53, 1);
     font-size: 18px;
@@ -324,9 +324,9 @@ main {
     line-height: 22px;
     margin: 0; 
     margin-bottom: 30px; 
-}
+} */
 
-.catalog__price {
+/* .catalog__price {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(89, 141, 102, 1);
     font-size: 24px;
@@ -345,9 +345,9 @@ main {
     font-weight: 500;
     padding: 21px 107px;
     cursor: pointer;
-}
+} */
 
-.catalog__button:hover {
+/* .catalog__button:hover {
     color: rgba(244, 246, 245, 1);
     background-color: rgba(89, 141, 102, 1);
     border: none;
@@ -357,14 +357,12 @@ main {
     color: rgba(44, 45, 53, 1);
     background-color: rgba(212, 232, 217, 1);
     border: 1px solid rgba(89, 141, 102, 1);
-}
+} */
 
 
-.promo {
+/* .promo {
     background-color: rgba(89, 141, 102, 1);
     background-image: url('./images/promo-bg.png');
-    /* background-image: url('./images/promo-bg-1.png'); */
-    /* background-image: url('./images/promo-bg-2.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 70px;
@@ -392,9 +390,9 @@ main {
     font-weight: 500;
     line-height: 40px;
     margin: 0;
-}
+} */
 
-.promo__text {
+/* .promo__text {
     display: block;
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(244, 246, 245, 1);
@@ -405,9 +403,9 @@ main {
     min-height: 209px;
     margin: 0;
     margin-bottom: 60px;
-}
+} */
 
-.promo__link {
+/* .promo__link {
     display: inline-block;
     text-decoration: none;
     background-color: rgba(238, 219, 109, 1);
@@ -417,47 +415,45 @@ main {
     font-weight: 500;
     line-height: 24px;
     padding: 21px 60px;
-}
+} */
 
-.promo__link:hover {
+/* .promo__link:hover {
     color: rgba(44, 45, 53, 1);
     background-color: rgba(250, 235, 151, 1);
     border: none;
-}
+} */
 
-.promo__link:focus {
+/* .promo__link:focus {
     color: rgba(44, 45, 53, 1);
     background-color: rgba(250, 235, 151, 1);
     border: 1px solid rgba(163, 131, 20, 1);
-}
+} */
 
 
-.promo__link:active {
+/* .promo__link:active {
     background-color:rgba(217, 185, 73, 1);
     color: rgba(44, 45, 53, 1);
     border: none;
-}
+} */
 
-.about_us {
+/* .about_us {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     align-items: center;
     padding: 70px 165px;
-}
+} */
 
-.about_us__img {
+/* .about_us__img {
     display: block;
-    /* transform: rotate(-90deg); */
 }
 
 .about_us__info {
     display: block;
     max-width: 635px;
+} */
 
-}
-
-.about_us__title {
+/* .about_us__title {
     display: block;
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(44, 45, 53, 1);
@@ -466,9 +462,9 @@ main {
     line-height: 44px;
     margin: 0;
     margin-bottom: 20px;
-}
+} */
 
-.about_us__text {
+/* .about_us__text {
     display: block;
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(44, 45, 53, 1);
@@ -478,38 +474,37 @@ main {
     margin: 0;
     margin-bottom: 20px;
     min-height: 108px;
-}
+} */
 
-.about_us__painters_list {
+/* .about_us__painters_list {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
     margin: 0;
-}
+} */
 
-.page_footer {
+/* .page_footer {
     background-color: rgba(225, 237, 230, 1);
     min-width: 168px;
     padding: 23px 165px;
     display: flex;
+} */
 
-}
-
-.page_footer__name {
+/* .page_footer__name {
     text-decoration: none;
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(89, 141, 102, 1);
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-}
+} */
 
-.page_header__contact_wrapper {
+/* .page_header__contact_wrapper {
     margin-bottom: 35px;
     margin-right: 115px;
-}
+} */
 
-.page_footer__phone {
+/* .page_footer__phone {
     display: flex;
     flex-direction: column;
 }
@@ -537,13 +532,13 @@ main {
     justify-content: space-between;
     gap: 60px;
     margin-right: 248px;
-}
+} */ 
 
-.page_footer__nav_list {
+/* .page_footer__nav_list {
     display: block;
     margin: 0;
-}
-
+} */
+/* 
 .page_footer__nav_title {
     margin: 0;
     font-family: "Raleway", "Arial", sans-serif;
@@ -551,12 +546,12 @@ main {
     font-size: 20px;
     font-weight: 500;
     line-height: 23px;
-}
-
+} */
+/* 
 .page_footer__nav_item:not(:last-child) {
     margin-bottom: 6px;
-}
-
+} */
+/* 
 .page_footer__nav_link {
     margin: 0;
     text-decoration: none;
@@ -565,22 +560,22 @@ main {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-}
+} */
 
-.page_footer__social_list {
+/* .page_footer__social_list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 0;
     margin-bottom: 10px;
-}
+} */
 
-.page_footer__info-name {
+/* .page_footer__info-name {
     display: block;
     margin-bottom: 6px;
-}
-
+} */
+/* 
 .page_footer__info-name,
 .page_footer__info {
     font-family: "Raleway", "Arial", sans-serif;
@@ -588,4 +583,4 @@ main {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
-}
+} */

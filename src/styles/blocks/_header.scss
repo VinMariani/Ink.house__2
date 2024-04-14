@@ -11,6 +11,11 @@
             margin-right: 8px;
         }
 
+        &__contact_wrapper {
+            margin-bottom: 35px;
+            margin-right: 115px;
+        }
+
         &__name {
             text-decoration: none;
             font-family: "Raleway", "Arial", sans-serif;
@@ -25,6 +30,8 @@
             justify-content: space-between;
             align-items: center;
             gap: 60px;
+            list-style: none;
+            padding: 0;
         }
 
         &__nav_link {
